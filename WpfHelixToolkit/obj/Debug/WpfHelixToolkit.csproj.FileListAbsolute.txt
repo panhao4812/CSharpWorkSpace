@@ -1,0 +1,16 @@
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\WpfHelixToolkit.exe.config
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\WpfHelixToolkit.exe
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\WpfHelixToolkit.pdb
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\HelixToolkit.Wpf.pdb
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\MainWindow.baml
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\MainWindow.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\App.g.cs
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit_MarkupCompile.cache
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.g.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.Properties.Resources.resources
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.csproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.exe
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.pdb
+C:\Users\Administrator\documents\visual studio 2012\Projects\WpfHelixToolkit\WpfHelixToolkit\obj\Debug\WpfHelixToolkit.csprojResolveAssemblyReference.cache
