@@ -34,6 +34,3 @@ D:\Revit\DecoBIM\TestSQLite\TestSQLite1\TestSQLite1\bin\Debug\System.Windows.For
 D:\Revit\DecoBIM\TestSQLite\TestSQLite1\TestSQLite1\bin\Debug\System.Data.SQLite.pdb
 D:\Revit\DecoBIM\TestSQLite\TestSQLite1\TestSQLite1\obj\Debug\TestSQLite1.csproj.TestSQLite1.exe.config
 D:\Revit\DecoBIM\TestSQLite\TestSQLite1\TestSQLite1\obj\Debug\TestSQLite1.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Documents\GitHub\CSharpWorkSpace\TestSQLite1\bin\Debug\TestSQLite1.exe.config
-C:\Users\Administrator\Documents\GitHub\CSharpWorkSpace\TestSQLite1\obj\Debug\TestSQLite1.exe
-C:\Users\Administrator\Documents\GitHub\CSharpWorkSpace\TestSQLite1\obj\Debug\TestSQLite1.pdb
