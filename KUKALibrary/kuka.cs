@@ -9,6 +9,37 @@ namespace KUKALibrary
     public class kuka
     {
         public kuka() { }
+        public void ReadFileFromRobot(string scrF,string dataF,out List<Plane> Planes, out List<double> Vels)
+        {
+            FileOpenData(scrF);
+            FileOpenData(dataF);
+            List<Plane> plsout = new List<Plane>();
+            List<double> velsout = new List<double>();
+            for (int i = 0; i < names2.Count; i++)
+            {
+                string str = names2[i];
+                if (str == "HOME" && i != 0 && i != names2.Count - 1)
+                {
+                    plsout.Add(CartToPLN(890, 0, 1080 + 50, 0, 90, 0));
+                    velsout.Add(vels[i]);
+                }
+                else
+                {
+                    str = "X" + str;
+                    for (int j = 0; j < names.Count; j++)
+                    {
+                        if (names[j] == str)
+                        {
+                            plsout.Add(pls[j]);
+                            velsout.Add(vels[i]);
+                            break;
+                        }
+                    }
+                }
+            }
+            Planes = plsout;
+            Vels = velsout;
+        }
         List<Plane> pls = new List<Plane>();
         List<string> names = new List<string>();
         List<string> names2 = new List<string>();
@@ -144,11 +175,13 @@ namespace KUKALibrary
               Convert.ToDouble(_D), Convert.ToDouble(_E), Convert.ToDouble(_F));
         }
         public Plane CartToPLN(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
-        {
-            Plane plane = new Plane(new Point3d(x_val, y_val, z_val), new Vector3d(0, 0.0, 1), new Vector3d(0.0, 1.0, 0.0));
+        {//Default XYZABC of TCP is 890, 0, 1080 0 90 0.
+            Plane plane = new Plane(new Point3d(890, 0, 1080), new Vector3d(1, 0, 0), new Vector3d(0, 1, 0));
+            plane.Origin = new Point3d(x_val, y_val, z_val);
             plane.Rotate((Math.PI * a_val) / 180.0, plane.ZAxis);
             plane.Rotate((Math.PI * b_val) / 180.0, plane.YAxis);
             plane.Rotate((Math.PI * c_val) / 180.0, plane.XAxis);
+            plane.Rotate((Math.PI * -90) / 180.0, plane.YAxis);
             return plane;
         }
         public Plane CartToPLN_Z(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
