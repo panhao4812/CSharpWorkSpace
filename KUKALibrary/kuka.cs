@@ -20,7 +20,7 @@ namespace KUKALibrary
                 string str = names2[i];
                 if (str == "HOME" && i != 0 && i != names2.Count - 1)
                 {
-                    plsout.Add(CartToPLN(890, 0, 1080 + 50, 0, 90, 0));
+                    plsout.Add(XYZABCToPlane(890, 0, 1080 + 50, 0, 90, 0));
                     velsout.Add(vels[i]);
                 }
                 else
@@ -170,11 +170,11 @@ namespace KUKALibrary
                 }
             }
             //Print(_A + " " + _B + " " + _C + " " + _D + " " + _E + " " + _F);
-            return CartToPLN(
+            return XYZABCToPlane(
               Convert.ToDouble(_A), Convert.ToDouble(_B), Convert.ToDouble(_C),
               Convert.ToDouble(_D), Convert.ToDouble(_E), Convert.ToDouble(_F));
         }
-        public Plane CartToPLN(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
+        public Plane XYZABCToPlane(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
         {//Default XYZABC of TCP is 890, 0, 1080 0 90 0.
             Plane plane = new Plane(new Point3d(890, 0, 1080), new Vector3d(1, 0, 0), new Vector3d(0, 1, 0));
             plane.Origin = new Point3d(x_val, y_val, z_val);
@@ -184,7 +184,7 @@ namespace KUKALibrary
             plane.Rotate((Math.PI * -90) / 180.0, plane.YAxis);
             return plane;
         }
-        public Plane CartToPLN_Z(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
+        public Plane XYZABCToPlane_Origin(double x_val, double y_val, double z_val, double a_val, double b_val, double c_val)
         {
             /*
                 KUKAprcCore.Geometry.Plane pln = KUKAprcCore.PRC_Methods.AuxMethods.PRC_CartToPLN(new KUKAprcCore.PRC_Classes.PRC_CartesianVals(
@@ -200,7 +200,7 @@ namespace KUKALibrary
             plane.Rotate((Math.PI * c_val) / 180.0, plane.XAxis);
             return plane;
         }
-        public List<double> PLNtoXYZABC(Plane plnin, bool useXAxis)
+        public List<double> PlanetoXYZABC(Plane plnin, bool useXAxis)
         {
             Plane plane = plnin;
             List<double> output = new List<double>();

@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollideTree", "CollideTree\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KUKALibrary", "KUKALibrary\KUKALibrary.csproj", "{E0FBB1B7-700E-4208-9336-F260D9E85B6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyworksLibrary", "PolyworksLibrary\PolyworksLibrary.csproj", "{37886935-E4FB-48D7-92B7-183664D9D32F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity3dLibrary", "Unity3dLibrary\Unity3dLibrary.csproj", "{97D6F9DB-B7C6-42AD-B420-40E600F34C85}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{E0FBB1B7-700E-4208-9336-F260D9E85B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0FBB1B7-700E-4208-9336-F260D9E85B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0FBB1B7-700E-4208-9336-F260D9E85B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37886935-E4FB-48D7-92B7-183664D9D32F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37886935-E4FB-48D7-92B7-183664D9D32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37886935-E4FB-48D7-92B7-183664D9D32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37886935-E4FB-48D7-92B7-183664D9D32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D6F9DB-B7C6-42AD-B420-40E600F34C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D6F9DB-B7C6-42AD-B420-40E600F34C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D6F9DB-B7C6-42AD-B420-40E600F34C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D6F9DB-B7C6-42AD-B420-40E600F34C85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
