@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using MECMOD;
-using HybridShapeTypeLib;
-using System.Collections.Generic;
 
 namespace ToCatia1
 {
@@ -21,11 +18,13 @@ namespace ToCatia1
         private void button1_Click(object sender, EventArgs e)
         {
             ///* 
+            ///
+            CATIA_VBA catia = new CATIA_VBA();
            string refname = "PC";
             string refpath = "C:\\Users\\Administrator\\Desktop\\catia\\tutorial\\triangleFrame2.CATPart";
             string[] inputpt = { "Point.1", "Point.2", "Point.3" };
             string[] refpoint = { "Point.1", "Point.2", "Point.3" };
-            ToCatiaAutomation.AddPowerCopyNPoint(refname, refpath, inputpt, refpoint);
+            catia.AddPowerCopyNPoint(refname, refpath, inputpt, refpoint);
             //*/
 
         }

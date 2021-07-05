@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PolyworksLibrary</RootNamespace>
     <AssemblyName>PolyworksLibrary</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -39,6 +41,17 @@
     <Reference Include="Grasshopper">
       <HintPath>..\..\..\..\..\..\Program Files\Rhino 7\Plug-ins\Grasshopper\Grasshopper.dll</HintPath>
     </Reference>
+    <Reference Include="Interop.IMInspectLib">
+      <HintPath>..\..\..\..\..\..\Program Files\InnovMetric\PolyWorks MS 2018\bin\Interop.IMInspectLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.IMPluginLib">
+      <HintPath>..\..\..\..\..\..\Program Files\InnovMetric\PolyWorks MS 2018\bin\Interop.IMPluginLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PolyWorksSDKManaged">
+      <HintPath>..\..\..\..\..\..\Program Files\InnovMetric\PolyWorks MS 2018\bin\PolyWorksSDKManaged.dll</HintPath>
+    </Reference>
     <Reference Include="RhinoCommon">
       <HintPath>..\..\..\..\..\..\Program Files\Rhino 7\System\RhinoCommon.dll</HintPath>
     </Reference>
@@ -52,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CInnovPlugin.cs" />
     <Compile Include="polyworks.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
